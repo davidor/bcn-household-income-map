@@ -11,6 +11,6 @@ double of the city mean has RFD = 2000.
 I got all the data from the <a href="http://opendata.bcn.cat/opendata/es/">
 open data service</a> of the Barcelona city council.
 The RFD data can be found <a href="http://opendata.bcn.cat/opendata/es/catalog/RENTA">here</a>
-and the geographic data <a href="www.bcn.cat/cartobcn/">here</a> 
+and the geographic data <a href="www.bcn.cat/cartobcn/">here</a>.
 
 I used the <a href="http://hpneo.github.io/gmaps/">gmaps.js library</a> to draw the map.
