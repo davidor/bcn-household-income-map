@@ -1,6 +1,8 @@
 This simple application shows a map of the Barcelona neighborhoods where each one
 of them is painted with a different color according to its mean household income.
 
+![screenshot](https://github.com/davidor/bcn-household-income-map/blob/master/screenshot.jpg?raw=true "screenshot")
+
 The Barcelona city council uses a metric called RFD (Renta Familiar Disponible)
 to represent the household income. The mean household income of the city is
 RFD = 1000. So for example, a neighborhood where the household income is the
