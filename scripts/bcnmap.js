@@ -1,3 +1,6 @@
+// (c) 2014 David Ortiz Lopez
+// This code is licensed under MIT license (see LICENSE.md for details)
+
 $(document).ready(function() {
 
     // Define the thresholds according to: http://www.bcn.cat/publicacions/pdf/rfd.pdf
