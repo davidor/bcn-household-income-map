@@ -3,6 +3,7 @@
 
 $(document).ready(function() {
 
+    var DATA_FILE = "data/bcnneighborhoods.json";
     // Define the thresholds according to: http://www.bcn.cat/publicacions/pdf/rfd.pdf
     var thresholds = [400, 790, 900, 1000, 1130, 1260, 1420, 1590];
     // Each threshold has a color associated.
@@ -39,11 +40,11 @@ $(document).ready(function() {
     // Load the json file that contains the data of Barcelona's neighborhoods,
     // and draw each neighborhood on the map. The color of the map depends on
     // the RFD of the neighborhood.
-    $.getJSON("data/bcnneighborhoods.json", function(data) {
-        for (var i = 0; i < data.features.length; i++) {
-            coordinates = data.features[i].geometry.coordinates;
-            color = getColorByRfd(data.features[i].properties.RFD);
-            polygon = map.drawPolygon({
+    $.getJSON(DATA_FILE, function(data) {
+        for (var i = 0; i < data["features"].length; i++) {
+            var coordinates = data["features"][i]["geometry"]["coordinates"];
+            var color = getColorByRfd(data["features"][i]["properties"]["RFD"]);
+            map.drawPolygon({
                 paths : coordinates,
                 useGeoJSON : true,
                 strokeOpacity : 1,
